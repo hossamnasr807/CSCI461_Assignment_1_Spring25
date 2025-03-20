@@ -13,16 +13,17 @@ The pipeline consists of the following scripts:
 5. `model.py` - Trains a K-Means clustering model.
 
 All scripts are executed inside a Docker container, and the final results are extracted to the host system.
+
 ---
 
 ## How to Run the Project  
 
-### ** Clone the Repository**  
+### Clone the Repository  
 ```bash
 git clone https://github.com/hossamnasr807/CSCI461_Assignment_1_Spring25.git
 cd CSCI461_Assignment_1_Spring25 
 ```
-### ** Build and Run the Docker Container**
+### Build and Run the Docker Container
 ```bash
 # Build the Docker image
 docker build -t bd-a1-image .
@@ -30,14 +31,14 @@ docker build -t bd-a1-image .
 # Run the container
 docker run -it --name bd-a1-container bd-a1-img
 ```
-### **  Start the Pipeline Execution**
+### Start the Pipeline Execution
 Start the pipeline by running the load.py script inside the container:
 ```bash
 docker exec bd-a1-container python3 load.py /home/doc-bd-a1/Iris.csv
 ```
 This will automatically trigger the execution of the subsequent scripts (dpre.py → eda.py → vis.py → model.py), as each script calls the next one in sequence.
 
-### **  Extract Results from the Container**
+### Extract Results from the Container
 Once the pipeline finishes, use the provided final.sh script to copy the output files to your local machine and stop the container:
 ```bash
 bash final.sh
