@@ -32,7 +32,7 @@ docker build -t bd-a1-image .
 docker run -it --name bd-a1-container bd-a1-img
 ```
 ### Copy Scripts into the Container
-Copy Scripts from your local machine into the Container
+Copy Scripts from your local machine into the Container<br>
 Run the following commands in another terminal after running the container
 ```bash
 docker cp load.py bd-a1-container:/home/doc-bd-a1/
@@ -41,6 +41,7 @@ docker cp eda.py bd-a1-container:/home/doc-bd-a1/
 docker cp vis.py bd-a1-container:/home/doc-bd-a1/
 docker cp model.py bd-a1-container:/home/doc-bd-a1/
 ```
+
 ### Start the Pipeline Execution
 Start the pipeline by running the load.py script inside the container:
 ```bash
