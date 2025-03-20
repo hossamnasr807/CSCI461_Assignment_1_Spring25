@@ -1,3 +1,3 @@
-Cluster 0: 50 records
-Cluster 1: 61 records
-Cluster 2: 39 records
+Cluster 0: 67 customers
+Cluster 1: 94 customers
+Cluster 2: 39 customers

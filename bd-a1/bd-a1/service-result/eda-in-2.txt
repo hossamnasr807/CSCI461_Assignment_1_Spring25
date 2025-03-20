@@ -1,1 +1,6 @@
-Number of duplicate rows: 3
+ Missing Values Per Column:
+CustomerID                0
+Genre                     0
+Age                       0
+Annual Income (k$)        0
+Spending Score (1-100)    0

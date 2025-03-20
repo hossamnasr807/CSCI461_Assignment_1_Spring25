@@ -1,0 +1,4 @@
+ Average Spending Score by Gender:
+Genre
+Female    51.526786
+Male      48.511364

@@ -19,7 +19,7 @@ RUN mkdir -p /home/doc-bd-a1/
 WORKDIR /home/doc-bd-a1/
 
 # Copy dataset from host to container
-COPY Iris.csv /home/doc-bd-a1/
+COPY Mall_Customers.csv /home/doc-bd-a1/
 
 # Keep container running with a bash shell
 CMD ["/bin/bash"]

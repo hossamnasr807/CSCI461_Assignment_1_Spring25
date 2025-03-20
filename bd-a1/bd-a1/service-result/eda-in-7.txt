@@ -1,0 +1,7 @@
+ Most Common Spending Score Ranges:
+Spending Score (1-100)
+(40.2, 59.8]     72
+(0.902, 20.6]    36
+(59.8, 79.4]     35
+(79.4, 99.0]     30
+(20.6, 40.2]     27

@@ -1,0 +1,6 @@
+ Correlation Matrix:
+                        CustomerID       Age  Annual Income (k$)  Spending Score (1-100)
+CustomerID                1.000000 -0.026763            0.977548                0.013835
+Age                      -0.026763  1.000000           -0.012398               -0.327227
+Annual Income (k$)        0.977548 -0.012398            1.000000                0.009903
+Spending Score (1-100)    0.013835 -0.327227            0.009903                1.000000
