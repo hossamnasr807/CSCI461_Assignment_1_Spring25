@@ -1,0 +1,27 @@
+In my local machine
+
+docker run -it --name bd-a1-container bd-a1-img
+
+docker cp load.py bd-a1-container:/home/doc-bd-a1/
+docker cp dpre.py bd-a1-container:/home/doc-bd-a1/
+docker cp eda.py bd-a1-container:/home/doc-bd-a1/
+docker cp vis.py bd-a1-container:/home/doc-bd-a1/
+docker cp model.py bd-a1-container:/home/doc-bd-a1/
+
+In container:
+
+python3 load.py /home/doc-bd-a1/Iris.csv
+
+
+Run git bash in the C:\Users\hossa\OneDrive\Documents\bd-a1 directory 
+
+Inside git bash:
+
+chmod +x final.sh (to give execute permissions)
+
+To rerun the container
+In my local machine:
+docker start -ai bd-a1-container
+
+or from Docker Desktop GUI
+
