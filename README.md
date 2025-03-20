@@ -54,7 +54,7 @@ Once the pipeline finishes, use the provided final.sh script to copy the output 
 <br>Inside git bash run the following commands:
 
 ```bash
-chmod +x final.sh #(to give execute permissions)
+chmod +x final.sh # to give execute permissions
 bash final.sh
 ```
 This script:
