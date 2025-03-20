@@ -2,7 +2,7 @@
 
 This project demonstrates a data pipeline implemented using Docker. The pipeline performs preprocessing, exploratory data analysis (EDA), visualization, and K-Means clustering on the Iris dataset.
 
-## 📌 Project Overview
+## Project Overview
 
 The pipeline consists of the following scripts:
 
