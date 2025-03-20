@@ -50,8 +50,9 @@ This will automatically trigger the execution of the subsequent scripts (dpre.py
 
 ### Extract Results from the Container
 Once the pipeline finishes, use the provided final.sh script to copy the output files to your local machine and stop the container:
-Run git bash inside the container directory "CSCI461_Assignment_1_Spring25/bd-a1"
-Inside git bash run the following commands:
+<br>Run git bash inside the container directory "CSCI461_Assignment_1_Spring25/bd-a1"
+<br>Inside git bash run the following commands:
+
 ```bash
 chmod +x final.sh #(to give execute permissions)
 bash final.sh
@@ -62,7 +63,8 @@ This script:
 
 ### Restarting the Container
 To rerun the container:
-In your local machine run the following command
+<br>In your local machine run the following command
+
 ```bash
 docker start -ai bd-a1-container
 ```
