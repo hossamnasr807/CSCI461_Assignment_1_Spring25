@@ -33,6 +33,7 @@ docker run -it --name bd-a1-container bd-a1-img
 ```
 ### Copy Scripts into the Container
 Copy Scripts from your local machine into the Container
+Run the following commands in another terminal after running the container
 ```bash
 docker cp load.py bd-a1-container:/home/doc-bd-a1/
 docker cp dpre.py bd-a1-container:/home/doc-bd-a1/
@@ -49,9 +50,20 @@ This will automatically trigger the execution of the subsequent scripts (dpre.py
 
 ### Extract Results from the Container
 Once the pipeline finishes, use the provided final.sh script to copy the output files to your local machine and stop the container:
+Run git bash inside the container directory "CSCI461_Assignment_1_Spring25/bd-a1"
+Inside git bash run the following commands:
 ```bash
+chmod +x final.sh #(to give execute permissions)
 bash final.sh
 ```
 This script:
 - Copies the output files from the container to the bd-a1/service-result/ directory.
 - Stops the container.
+
+### Restarting the Container
+To rerun the container:
+In your local machine run the following command
+```bash
+docker start -ai bd-a1-container
+```
+or restart the container from Docker Desktop GUI
