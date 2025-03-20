@@ -6,11 +6,13 @@ This project demonstrates a data pipeline implemented using Docker. The pipeline
 
 The pipeline consists of the following scripts:
 
-1. `load.py` - Loads the Iris dataset.
-2. `dpre.py` - Preprocesses the data.
-3. `eda.py` - Performs exploratory data analysis.
-4. `vis.py` - Generates visualizations.
-5. `model.py` - Trains a K-Means clustering model.
+1. `Dockerfile` - Defines the container environment, including dependencies and script execution settings.
+2. `load.py` - Loads the Iris dataset.
+3. `dpre.py` - Preprocesses the data.
+4. `eda.py` - Performs exploratory data analysis.
+5. `vis.py` - Generates visualizations.
+6. `model.py` - Trains a K-Means clustering model.
+7. `final.sh` - Copies the output files from the container to the local machine and stops the container.
 
 All scripts are executed inside a Docker container, and the final results are extracted to the host system.
 
