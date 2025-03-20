@@ -33,10 +33,7 @@ cd CSCI461_Assignment_1_Spring25/bd-a1
 ```
 ### Build and Run the Docker Container
 ```bash
-# Build the Docker image
 docker build -t bd-a1-image .
-
-# Run the container
 docker run -it --name bd-a1-container bd-a1-image
 ```
 ### Copy Scripts into the Container
@@ -64,7 +61,7 @@ Once the pipeline finishes, use the provided final.sh script to copy the output 
 <br>Inside git bash run the following commands:
 
 ```bash
-chmod +x final.sh # to give execute permissions
+chmod +x final.sh
 bash final.sh
 ```
 This script:
@@ -101,9 +98,6 @@ After running the pipeline, the following files will be available in bd-a1/servi
 
 ### List of Docker Commands Used inside the final.sh script:
 ```bash
-# Copy all output files dynamically from the container to the host
 docker cp bd-a1-container:/home/doc-bd-a1/. bd-a1/service-result/
-
-# Stop the container
 docker stop bd-a1-container
 ```
