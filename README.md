@@ -15,6 +15,8 @@ The pipeline consists of the following scripts:
 All scripts are executed inside a Docker container, and the final results are extracted to the host system.
 
 ---
+### Image link on Dockerhub
+[bd-a1-img](https://hub.docker.com/r/hossamnasr807/bd-a1-img)
 
 ## How to Run the Project  
 
@@ -70,3 +72,38 @@ To rerun the container:
 docker start -ai bd-a1-container
 ```
 or restart the container from Docker Desktop GUI
+### Final Outputs
+
+After running the pipeline, the following files will be available in bd-a1/service-result/:
+
+- eda-in-1.txt (EDA Insight 1)
+
+- eda-in-2.txt (EDA Insight 2)
+
+- eda-in-3.txt (EDA Insight 3)
+
+- vis.png (Visualization output)
+
+- trained_model.pkl (Saved K-Means model)
+
+- loaded_data.csv (Iris dataset)
+
+- res_dpre.csv (preprocessed Iris dataset)
+
+- k.txt (Cluster counts)
+
+### List of Docker Commands Used inside the final.sh script:
+```bash
+# Copy results from container to host
+docker cp bd-a1-container:/home/doc-bd-a1/eda-in-1.txt bd-a1/service-result/
+docker cp bd-a1-container:/home/doc-bd-a1/eda-in-2.txt bd-a1/service-result/
+docker cp bd-a1-container:/home/doc-bd-a1/eda-in-3.txt bd-a1/service-result/
+docker cp bd-a1-container:/home/doc-bd-a1/vis.png bd-a1/service-result/
+docker cp bd-a1-container:/home/doc-bd-a1/kmeans_model.pkl bd-a1/service-result/
+docker cp bd-a1-container:/home/doc-bd-a1/k.txt bd-a1/service-result/
+docker cp bd-a1-container:/home/doc-bd-a1/loaded_data.csv bd-a1/service-result/
+docker cp bd-a1-container:/home/doc-bd-a1/res_dpre.csv bd-a1/service-result/
+
+# Stop the container
+docker stop bd-a1-container
+```
