@@ -83,7 +83,7 @@ or restart the container from Docker Desktop GUI
 
 After running the pipeline, the following files will be available in bd-a1/service-result/:
 
-- eda-in-1.txt -> eda-in-9.txt (EDA Insights from 1 to 9)
+- eda-in-1.txt -> eda-in-8.txt (EDA Insights from 1 to 8)
 
 - vis.png (Visualization output)
 
